@@ -16,6 +16,7 @@ $hasil = mysqli_query($mysqli, "SELECT * FROM barang ORDER BY id_barang DESC");
 
 <body>
   <h1 align="center">Tabel Barang</h1><br>
+  <a href="index.html">Go to Home</a>
     <table class="table table-striped" width='80%' border=1>
 
     <tr>

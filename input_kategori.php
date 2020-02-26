@@ -3,14 +3,14 @@
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <title>Input Satuan</title>
+    <title>Input Kategori</title>
 </head>
 
 <body>
     <a href="index.html">Go to Home</a>
     <br/><br/>
 
-    <form action="input_satuan.php" method="post" name="form2">
+    <form action="input_kategori.php" method="post" name="form3">
         <table class="table table-striped" width="25%" border="0">
             <tr>
                 <td>satuan_id</td>
