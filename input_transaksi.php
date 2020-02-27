@@ -3,14 +3,14 @@
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <script type="text/javascript" src="bootstrap/js/jquery.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    <title>Tambah Barang</title>
+    <title>Input Transaksi</title>
 </head>
 
 <body>
     <a href="index.html">Go to Home</a>
     <br/><br/>
 
-    <form action="input_barang.php" method="post" name="form1">
+    <form action="input_transaksi.php" method="post" name="form4">
         <table class="table table-striped" width="25%" border="0">
             <tr>
                 <td>id_barang</td>
@@ -47,10 +47,10 @@
         include_once("config.php");
 
         // Insert user data into table
-        $result = mysqli_query($mysqli, "INSERT INTO barang (id_barang,nama,kategori_id,satuan_id) VALUES('$id_barang','$nama','$kategori_id','$satuan_id')");
+        $result = mysqli_query($mysqli, "INSERT INTO transaksi (id_transaksi,nama_transaksi,tanggal_transaksi,harga,qty,id_barang) VALUES('$id_transaksi','$nama_transaksi','$tanggal_transaksi','$harga','$qty','$id_barang')");
 
         // Show message when user added,
-        echo "Input Berhasil. <a href='tampil_barang.php'>Cek Daftar Barang</a>";
+        echo "Input Berhasil. <a href='tampil_transaksi.php'>Cek Daftar Transaksi</a>";
     }
     ?>
 </body>

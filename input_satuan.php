@@ -23,7 +23,7 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
+                <td><input class="btn btn-primary" type="submit" value="Submit" nama="submit"></td>
             </tr>
         </table>
     </form>

@@ -13,8 +13,8 @@
     <form action="input_kategori.php" method="post" name="form3">
         <table class="table table-striped" width="25%" border="0">
             <tr>
-                <td>satuan_id</td>
-                <td><input type="text" name="satuan_id"></td>
+                <td>id_kategori</td>
+                <td><input type="text" name="id_kategori"></td>
             </tr>
             <tr>
                 <td>nama</td>
@@ -23,7 +23,7 @@
 
             <tr>
                 <td></td>
-                <td><input type="submit" name="Submit" value="Add"></td>
+                <td><input class="btn btn-primary" type="submit" value="Submit" nama="submit"></td>
             </tr>
         </table>
     </form>
@@ -32,21 +32,16 @@
 
     // Check If form submitted, insert form data into satuan table.
     if(isset($_POST['Submit'])) {
-        $satuan_id = $_POST['satuan_id'];
+        $id_kategori = $_POST['id_kategori'];
         $nama = $_POST['nama'];
         // include database connection file
         include_once("config.php");
         // Insert user data into table
-        $result = mysqli_query($mysqli, "INSERT INTO satuan (satuan_id,nama) VALUES('$satuan_id','$nama')");
+        $result = mysqli_query($mysqli, "INSERT INTO kategori (id_kategori,nama) VALUES('$id_kategori','$nama')");
 
         // Tampil Satuan
-        echo "Input Berhasil. <a href='tampil_satuan.php'>Cek Daftar Satuan,         </a>";
+        echo "Input Berhasil. <a href='tampil_kategori.php'>Cek Daftar Kategori, </a>";}
 
-    if( empty( $_POST[ 'satuan_id' ] ) ) {
-
-      $error = 'Masukan nilai pada satuan_id Namun Data Sudah Masuk';
-      echo $error;
- }else{echo "Masukan nama, Namun data sudah masuk";}}
     ?>
 </body>
 </html>
