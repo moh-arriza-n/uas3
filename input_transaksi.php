@@ -13,8 +13,8 @@
     <form action="input_transaksi.php" method="post" name="form4">
         <table class="table table-striped" width="25%" border="0">
             <tr>
-                <td>id_barang</td>
-                <td><input type="text" name="id_barang"></td>
+                <td>id_transaksi</td>
+                <td><input type="text" name="id_transaksi"></td>
             </tr>
             <tr>
                 <td>nama</td>
