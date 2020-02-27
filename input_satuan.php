@@ -23,7 +23,7 @@
 
             <tr>
                 <td></td>
-                <td><input class="btn btn-primary" type="submit" value="Submit" nama="submit"></td>
+                <td><input class="btn btn-primary" type="submit" value="Submit" name="Submit"></td>
             </tr>
         </table>
     </form>
@@ -40,13 +40,8 @@
         $result = mysqli_query($mysqli, "INSERT INTO satuan (satuan_id,nama) VALUES('$satuan_id','$nama')");
 
         // Tampil Satuan
-        echo "Input Berhasil. <a href='tampil_satuan.php'>Cek Daftar Satuan,         </a>";
+        echo "Input Berhasil. <a href='tampil_satuan.php'>Cek Daftar Satuan</a>";}
 
-    if( empty( $_POST[ 'satuan_id' ] ) ) {
-
-      $error = 'Masukan nilai pada satuan_id Namun Data Sudah Masuk';
-      echo $error;
- }else{echo "Masukan nama, Namun data sudah masuk";}}
     ?>
 </body>
 </html>

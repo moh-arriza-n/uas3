@@ -30,7 +30,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input class="btn btn-primary" type="submit" value="Submit" nama="submit"></td>
+                <td><input class="btn btn-primary" type="submit" value="Submit" name="Submit"></td>
             </tr>
         </table>
     </form>
@@ -47,7 +47,7 @@
         include_once("config.php");
 
         // Insert user data into table
-        $result = mysqli_query($mysqli, "INSERT INTO barang (id_barang,nama,kategori_id,satuan_id) VALUES('$id_barang','$nama','$kategori_id','$satuan_id')");
+        $result = mysqli_query($mysqli, "INSERT INTO barang (id_barang,nama,kategori_id,satuan_id) VALUES('$id_barang','$nama','$kategori_id','$satuan_id') ORDER BY id_barang");
 
         // Show message when user added,
         echo "Input Berhasil. <a href='tampil_barang.php'>Cek Daftar Barang</a>";
